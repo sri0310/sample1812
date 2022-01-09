@@ -1,7 +1,11 @@
 <html>
  <head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
         <title>MAJOR PROJECT</title>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
         <style>@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -701,22 +705,94 @@
         background-repeat: no-repeat;
         min-height: 400px;
     }
+          form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+          
 </style>
     </head>
 <body>
 
 <!--===========Nav Bar=================-->
+   
 <section class="nav-bar">
-    <div class="logo">NAME OF THE COMPANY!</div>
+    <div class="logo">LEARNIDENT</div>
     <ul class="menu">
         <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">COURSES</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#courses">COURSES</a></li>
         <li><a href="#">TESTINOMIALS</a></li>
         <li><a href="#">FIND US </a></li>
-        <li><a href="#">CONTACT US</a></li>
-        <li><a href="#">SIGN UP</a></li>
-        <li><a href="#">LOGIN</a></li>
+        <li><a href="#cd">CONTACT US</a></li>
+        <li><a href="#form">SIGN UP</a></li>
+        <li><a href="#form">LOGIN</a></li>
     </ul>
     </div>
 
@@ -730,12 +806,15 @@
         <form class="form">
             <input type="text" list="mylist" placeholder=What Would you like to explore?">
             <datalist id="mylist">
-                <option>CAT/GMAT</option>
-                <option>CLAT</option>
-                <option>NEET/OTHER MEDICAL ENTRANCE</option>
-                <option>JEE</option>
-                <option>PLACEMENT COURSES</option>
-                <option>PERSONAL DEVELOPMENT COURSES</option>
+                
+                <option>TNPSC
+</option>
+                <option>SSC</option>
+                <option>BANKING </option>
+                                 <option>SSC + BANKING</option>
+                                 <option>TNPSC + BANKING</option>
+                                 <option>SSC + TNPSC</option>
+                
                 
             </datalist>
             <input type="date" class="date">
@@ -746,13 +825,13 @@
 
 
 <!--==============COURSES===================-->
-<section class="places">
+<section class="places" id="courses">
     <div class="places-text">
         
         <h2>FEATURED COURSES</h2>
     </div>
 
-    <div class="cards">
+     <div class="cards">
         <div class="card">
             <div class="zoom-img">
                 <div class="img-card">
@@ -762,8 +841,8 @@
 
             <div class="text">
                 <span class="rating">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
-                <h2>COURSE-1</h2>
-                <p class="cost">Rs 100/-</p>
+                <h2>SSC</h2>
+                <p class="cost">Rs 8999/-</p>
                 <div class="card-box">
                     <p class="DURATION">&#128339; 90 Days</p>
                     
@@ -780,8 +859,8 @@
 
             <div class="text">
                 <span class="rating">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
-                <h2>COURSE-2</h2>
-                <p class="cost">Rs 100/-</p>
+                <h2>TNPSC</h2>
+                <p class="cost">Rs 8999-</p>
                 <div class="card-box">
                     <p class="time">&#128339; 90- Days</p>
                     
@@ -798,10 +877,10 @@
 
             <div class="text">
                 <span class="rating">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
-                <h2>COURSE-3</h2>
-                <p class="cost">Rs 100</p>
+                <h2>BANKING</h2>
+                <p class="cost">Rs 7999</p>
                 <div class="card-box">
-                    <p class="time">&#128339; 30 Days</p>
+                    <p class="time">&#128339; 60 Days</p>
                     
                 </div>
             </div>
@@ -816,10 +895,10 @@
 
             <div class="text">
                 <span class="rating">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
-                <h2>COURSE-4</h2>
-                <p class="cost">Rs 100</p>
+                <h2>SSC+BANKING</h2>
+                <p class="cost">Rs 6999</p>
                 <div class="card-box">
-                    <p class="time">&#128339; 30 Days</p>
+                    <p class="time">&#128339; 120 Days</p>
                   
                 </div>
             </div>
@@ -834,10 +913,10 @@
 
             <div class="text">
                 <span class="rating">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
-                <h2>COURSE-5</h2>
-                <p class="cost">Rs 100/-</p>
+                <h2>TNPSC+BANKING</h2>
+                <p class="cost">Rs 6999/-</p>
                 <div class="card-box">
-                    <p class="time">&#128339; 30 Days</p>
+                    <p class="time">&#128339; 120 Days</p>
                     
                 </div>
             </div>
@@ -852,55 +931,80 @@
 
             <div class="text">
                 <span class="rating">&#11088;&#11088;&#11088;&#11088;&#11088;</span>
-                <h2>COURSE-6</h2>
-                <p class="cost">Rs 100/-</p>
+                <h2>SSC+TNPSC</h2>
+                <p class="cost">Rs 7999/-</p>
                 <div class="card-box">
-                    <p class="time">&#128339; 30 Days</p>
+                    <p class="time">&#128339; 150 Days</p>
                     
                 </div>
             </div>
         </div>
     </div>
+                               
+                               
+                               
+       
+
 </section>
 <!--===========About Us===============-->
-<section class="about">
+<section class="about" id="about">
     <div class="about-img">
         <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293719/outdoor_tjjhxk.jpg">
     </div>
     <div class="about-text">
-        <small>ABOUT OUR COMPANY</small>
-        <h2>WHERE KNKOWLEDGE INSPIRES EXCELLENCE</h2>
-        <p>WHAT'S IN STORE FOR YOU?</p>
-
-        <label><input type="checkbox" checked>FEATURE-1</label>
-        <label><input type="checkbox" checked>FEATURE-2</label>
-        <label><input type="checkbox" checked>FEATURE-3</label>
-        <label><input type="checkbox" checked>FEATURE-4</label>
-        <a href="#">ABOUT US</a>
+                           <bold><h2>ABOUT OUR COMPANY</b></h2>
+     
+     <p>   Learnident provides engaging sessions and practice drills to help candidates crack any exam conducted by various central and state bodies. We act as an efficient bridge for connecting hard work and smart work with success.  Providing guidance to candidates in shaping their own destiny is a process that we cherish. It doesn’t matter whether you’re an early bird or a night owl, we make you learn round the clock without any learner’s block.</p> <br><br>
+                           
+                           <bold> <strong> <h3>LEARN TO LEAD WITH LEARNIDENT</h3></bold></strong>
+                           <br><br>
+                           
+<ul>
+                           <li>Comprehensive classes with clarity in concepts</li>
+                           <li>Individual attention and mentorship</li>
+                           <li>Customised learning modules</li>
+                           <li>Regular assessments and reviews</li>
+                           <li>Periodic performance report</li>
+                           </p>
     </div>
-</section>
+
+                          <h2><bold><i><center><U>WELCOME TO THE LEARNIDENT FAMILY</b></h2>
+                           <bold></U>
+                           <br>
+                          </section>
+                           
+                           
+                           
+                           <section class="form" id="form">
+                           <form action="insert.php" method="post">
+  
+
+  <div class="container">
+    <label for="uname"><b>Mail Id</b></label>
+    <input type="text" placeholder="Enter MAIL ID" name="mail id" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">SIGN UP</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  
+    
+</form>
+                                        </section>
+                <section class="cd" id="cd">
+                                          <P>
+                                         <h2><strong><bold> <center> GET IN TOUCH<br><br>
+                                           MOBILE:<a href="tel:9345803090" >93456803090</a><br><br>
+                                           MAIL:<a href="learnident@gmail.com">learnident@gmail.com</a>
+                                           </P>
+                                                                              
 
 <!--===========Footer=================-->
-<div class="footer">
-    <div class="links">
-        <h3>Quick Links</h3>
-        <ul>
-            <li>Offers & Discounts</li>
-            <li>Get Coupon</li>
-            <li>Contact Us</li>
-            <li>About</li>
-        </ul>
-    </div>
-    
-    <div class="links">
-        <h3>Support</h3>
-        <ul>
-            <li>Frequently Asked Questions</li>
-            <li>Report a Payment Issue</li>
-            <li>Terms & Conditions</li>
-            <li>Privacy Policy</li>
-        </ul>
-    </div>
-</div>
+
 </body>
 </html>

@@ -1,0 +1,7 @@
+<?php
+$Mail Id=$_POST['mail id'];
+$Password=$_POST['psw'];
+        $host = "localhost";
+        $dbUsername = "root";
+        $dbPassword = "";
+        $dbName = "test";
